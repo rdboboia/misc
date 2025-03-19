@@ -1,3 +1,6 @@
+# What is efficiency
+In simple terms the efficiency is the performance that we get for each power unit consumed. That is, efficiency is the performence per watt. The more performance per watt, the more efficient a component is.
+
 # Hardware efficiency optimizations
 Modern hardware is pushed kinda hard from the factory, which leads to unnecessarily high voltages, temperatures and power consumption. The main motivation for this is to ensure that the expected performance is met by even the worst samples. However those samples that are not in that worst case have a lot of efficiency to be gained by tweaking some parameters, primarily the default frequency-voltage curve and the max allowed TDP.
 
