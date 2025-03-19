@@ -1,4 +1,4 @@
 # NVIDIA RTX 4070Ti Super
 
 ## Efficiency analysis
-![image](https://github.com/user-attachments/assets/3359a159-2b6e-4747-9d70-ede56e31402a)
+![image](https://github.com/user-attachments/assets/2f1d9857-0c1d-4ca4-adf4-f9332a2a9caf)
