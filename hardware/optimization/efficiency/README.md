@@ -3,8 +3,9 @@ In simple terms the efficiency is the performance that we get for each power uni
 
 In general, speaking of any component, there is always a sweet spot where the efficiency peaks.
 However, in most cases, that peak is far from the ideal performance.
-By tuning the performance and power draw we can gaing efficiency by moving along the efficiency line into a spot where the performance decrease is not noticeable but the power draw is a lot lower, which leads to improved efficiency at roughtly the same performance.
+By tuning the performance and power draw we can gain efficiency by moving along the efficiency curve into a spot where the performance decrease is not noticeable but the power draw is a lot lower, which leads to improved efficiency at roughtly the same performance.
 
+Without going in detail (since this is already tested and explained in each component's section) I found out that for NVIDIA 4000 and 5000 series GPUs we can reduce the power consumption by 25% while only loosing at most 5% performance, and for AMD 9000 series CPUs we can reduce the power consumption by 30% while maintaining the same performance (or reduce power consumption by 40% while only loosing 5% performance).
 
 # Hardware efficiency optimizations
 Modern hardware is pushed kinda hard from the factory, which leads to unnecessarily high voltages, temperatures and power consumption. The main motivation for this is to ensure that the expected performance is met by even the worst samples. However those samples that are not in that worst case have a lot of efficiency to be gained by tweaking some parameters, primarily the default frequency-voltage curve and the max allowed TDP.
