@@ -186,7 +186,7 @@ ID=CPU power
 Name=CPU clock
 Units=MHz
 Format=
-Formula=
+Formula=x * 1.0019
 Provider=HAL
 ID=CPU clock
 [Source25]
