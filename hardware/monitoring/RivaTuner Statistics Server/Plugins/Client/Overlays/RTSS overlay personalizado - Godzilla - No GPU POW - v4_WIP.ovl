@@ -11,9 +11,9 @@ RefreshPeriod=500
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=40
+Sources=41
 Tables=0
-Layers=52
+Layers=54
 [Source0]
 Name=CPU1 usage
 Units=%
@@ -294,6 +294,13 @@ Format=
 Formula=
 Provider=PresentMon
 ID=GPUBusy
+[Source40]
+Name=GPU1 PerfCap mask
+Units=
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 PerfCap mask
 [Layer0]
 Name=CPU1 usage bar
 Text=<G=CPU1 usage,0,0,1,0,100,8>
@@ -818,3 +825,23 @@ ExtentY=-1
 ExtentOrigin=0
 Size=50
 TextColor=FFFFFF,0,50,8000,50,75,FF00,75,(Framerate,1)
+[Layer52]
+Name=
+Text="GPU1 PerfCap mask\n<G=GPU1 PerfCap mask> %GPU1 PerfCap mask% "
+PositionX=0
+PositionY=-55
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+[Layer53]
+Name=Framerate Graph
+Text=Framerate\n<G=Framerate,0,-2,1,0,140,80> <FR> FPS
+PositionX=-37
+PositionY=-27
+ExtentX=-27
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate,0)
+BgndColor=80000000
