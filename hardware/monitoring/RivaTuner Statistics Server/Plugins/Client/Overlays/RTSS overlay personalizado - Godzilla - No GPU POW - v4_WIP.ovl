@@ -425,7 +425,7 @@ ExtentOrigin=0
 TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate,0)
 BgndColor=80000000
 [Layer13]
-Name=
+Name=Frametime graph
 Text=<G=Frametime,0,0,1,0,20,1>
 PositionX=-37
 PositionY=-33
@@ -435,7 +435,7 @@ ExtentOrigin=0
 TextColor=FF00,0,10,C0C0C0,10,20,FF0000,20,(Frametime,0)
 BgndColor=80000000
 [Layer14]
-Name=
+Name=GPU total memory usage % bar
 Text=<G=GPU1 memory usage percent,0,0,1,0,100,8>
 PositionX=-4
 PositionY=-6
@@ -445,7 +445,7 @@ ExtentOrigin=0
 TextColor=C0C0C0,0,30,8000,30,60,FF00,60,90,FF0000,90,(GPU1 memory usage percent,1)
 BgndColor=80000000
 [Layer15]
-Name=
+Name=GPU power bar
 Text=<G=GPU1 power,0,0,1,0,280,8>
 PositionX=-4
 PositionY=-5
@@ -504,7 +504,7 @@ ExtentX=-7
 ExtentY=-1
 ExtentOrigin=0
 [Layer21]
-Name=
+Name=GPU current app memory usage % bar
 Text=<G=GPU1 memory usage \ process,0,0,1,0,16384,8>
 PositionX=-4
 PositionY=-6
@@ -563,7 +563,7 @@ ExtentOrigin=5
 TextColor=8000
 BgndColor=80000000
 [Layer27]
-Name=
+Name=GPU usage bar
 Text=<G=GPU1 usage,0,0,1,0,100,8>
 PositionX=-4
 PositionY=-4
@@ -681,7 +681,7 @@ FixedAlignment=1
 Size=50
 TextColor=C0C0C0,0,80,FF0000,80,(GPU1 memory temperature,0)
 [Layer39]
-Name=
+Name=GPU hotspot temp graph
 Text=<G=GPU1 temperature Hotsopt,0,0,1,0,100,0> %GPU1 temperature Hotsopt% °C
 PositionX=-26
 PositionY=-5
@@ -703,7 +703,7 @@ FixedAlignment=1
 TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU usage,1)
 BgndColor=80000000
 [Layer41]
-Name=
+Name=GPU VRAM temp graph
 Text=<G=GPU1 memory temperature,0,0,1,0,100,0> %GPU1 memory temperature% °C
 PositionX=-26
 PositionY=-8
@@ -714,7 +714,7 @@ FixedAlignment=1
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 memory temperature,1)
 BgndColor=80000000
 [Layer42]
-Name=
+Name=GPU core temperature graph
 Text=<G=GPU1 temperature,0,0,1,0,100,0>
 PositionX=-37
 PositionY=-36
@@ -725,9 +725,9 @@ FixedAlignment=1
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature,1)
 BgndColor=80000000
 [Layer43]
-Name=
-Text=GPU  %GPU1 temperature% °C
-PositionX=-67
+Name=GPU core temperature label
+Text=GPU core  %GPU1 temperature% °C
+PositionX=-64
 PositionY=-36
 ExtentX=-5
 ExtentY=-1
@@ -736,7 +736,7 @@ FixedAlignment=1
 Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature,1)
 [Layer44]
-Name=
+Name=GPU hotspot temp label
 Text=GPU Hotspot
 PositionX=-26
 PositionY=-5
@@ -747,7 +747,7 @@ FixedAlignment=1
 Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature Hotsopt,1)
 [Layer45]
-Name=
+Name=GPU VRAM temp label
 Text=VRAM
 PositionX=-26
 PositionY=-8
@@ -769,8 +769,8 @@ FixedAlignment=1
 Size=50
 TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU usage,1)
 [Layer47]
-Name=
-Text=Frametime  %Frametime%
+Name=Frametime label
+Text=Frametime  %Frametime% ms
 PositionX=-64
 PositionY=-33
 ExtentX=-8
@@ -779,9 +779,9 @@ ExtentOrigin=0
 Size=50
 TextColor=FF00,0,10,C0C0C0,10,20,FF0000,20,(Frametime,0)
 [Layer48]
-Name=
-Text=FPS  %Framerate%
-PositionX=-67
+Name=Framerate label
+Text=Framerate  %Framerate% FPS
+PositionX=-64
 PositionY=-30
 ExtentX=-1
 ExtentY=-1
@@ -799,7 +799,7 @@ ExtentOrigin=5
 TextColor=8000
 BgndColor=80000000
 [Layer50]
-Name=
+Name=GPU usage graph
 Text=<G=GPU1 usage,0,0,1,0,100,0>
 PositionX=-37
 PositionY=-39
@@ -809,9 +809,9 @@ ExtentOrigin=0
 TextColor=FFFFFF,0,50,8000,50,75,FF00,75,(GPU1 usage,1)
 BgndColor=80000000
 [Layer51]
-Name=
-Text=GPU  %GPU1 usage% %
-PositionX=-67
+Name=GPU usage label
+Text=GPU usage  %GPU1 usage% %
+PositionX=-64
 PositionY=-39
 ExtentX=-5
 ExtentY=-1
