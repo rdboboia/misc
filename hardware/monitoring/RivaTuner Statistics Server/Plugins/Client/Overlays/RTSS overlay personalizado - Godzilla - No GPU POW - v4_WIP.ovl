@@ -7,13 +7,13 @@ ZoomRatio=2
 [Settings]
 Name=
 EnvVars=PM_RefreshPeriod=20;PM_DisplayDelay=3000;PM_ProcessId=1
-RefreshPeriod=500
+RefreshPeriod=100
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=41
+Sources=42
 Tables=0
-Layers=54
+Layers=70
 [Source0]
 Name=CPU1 usage
 Units=%
@@ -183,118 +183,125 @@ Formula=
 Provider=HAL
 ID=CPU power
 [Source24]
+Name=CPU temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU temperature
+[Source25]
 Name=CPU clock
 Units=MHz
 Format=
 Formula=x * 1.0019
 Provider=HAL
 ID=CPU clock
-[Source25]
+[Source26]
 Name=GPU1 usage
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 usage
-[Source26]
+[Source27]
 Name=GPU1 power
 Units=W
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 power
-[Source27]
+[Source28]
 Name=GPU1 memory usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory usage percent
-[Source28]
+[Source29]
 Name=GPU1 memory usage \ process
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory usage \ process
-[Source29]
+[Source30]
 Name=GPU1 temperature
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature
-[Source30]
+[Source31]
 Name=GPU1 temperature Hotsopt
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature 2
-[Source31]
+[Source32]
 Name=GPU1 memory temperature
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory temperature
-[Source32]
+[Source33]
 Name=GPU1 memory controller usage
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory controller usage
-[Source33]
+[Source34]
 Name=GPU1 bus usage
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 bus usage
-[Source34]
+[Source35]
 Name=Commit charge
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=Commit charge
-[Source35]
+[Source36]
 Name=RAM usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent
-[Source36]
+[Source37]
 Name=RAM usage percent \ process
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent \ process
-[Source37]
+[Source38]
 Name=Display2 refresh rate
 Units=Hz
 Format=
 Formula=
 Provider=HAL
 ID=Display2 refresh rate
-[Source38]
+[Source39]
 Name=CPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=CPUBusy
-[Source39]
+[Source40]
 Name=GPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=GPUBusy
-[Source40]
+[Source41]
 Name=GPU1 PerfCap mask
 Units=
 Format=
@@ -700,13 +707,14 @@ TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature Hotsop
 BgndColor=80000000
 [Layer40]
 Name=CPU_GLOBAL usage graph
-Text=<G=CPU usage,0,0,1,0,100,0>
-PositionX=-26
-PositionY=-21
-ExtentX=-7
-ExtentY=-8
+Text=CPU: %CPU usage%%\n<G=CPU usage,65,120,1,0,100,1>
+PositionX=-61
+PositionY=-43
+ExtentX=-12
+ExtentY=-12
 ExtentOrigin=0
 FixedAlignment=1
+Size=50
 TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU usage,1)
 BgndColor=80000000
 [Layer41]
@@ -765,17 +773,6 @@ FixedAlignment=1
 Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 memory temperature,1)
 [Layer46]
-Name=CPU_GLOBAL usage label
-Text=CPU %
-PositionX=-26
-PositionY=-21
-ExtentX=-3
-ExtentY=-1
-ExtentOrigin=0
-FixedAlignment=1
-Size=50
-TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU usage,1)
-[Layer47]
 Name=Frametime label
 Text=Frametime  %Frametime% ms
 PositionX=-64
@@ -785,7 +782,7 @@ ExtentY=-1
 ExtentOrigin=0
 Size=50
 TextColor=FF00,0,10,C0C0C0,10,20,FF0000,20,(Frametime,0)
-[Layer48]
+[Layer47]
 Name=Framerate label
 Text=Framerate  %Framerate% FPS
 PositionX=-64
@@ -795,7 +792,7 @@ ExtentY=-1
 ExtentOrigin=0
 Size=50
 TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate,0)
-[Layer49]
+[Layer48]
 Name=
 Text=GPU Driver: %Driver%
 PositionX=0
@@ -805,7 +802,7 @@ ExtentY=-1
 ExtentOrigin=5
 TextColor=8000
 BgndColor=80000000
-[Layer50]
+[Layer49]
 Name=GPU usage graph
 Text=<G=GPU1 usage,0,0,1,0,100,0>
 PositionX=-37
@@ -815,7 +812,7 @@ ExtentY=-3
 ExtentOrigin=0
 TextColor=FFFFFF,0,50,8000,50,75,FF00,75,(GPU1 usage,1)
 BgndColor=80000000
-[Layer51]
+[Layer50]
 Name=GPU usage label
 Text=GPU usage  %GPU1 usage% %
 PositionX=-64
@@ -824,8 +821,8 @@ ExtentX=-5
 ExtentY=-1
 ExtentOrigin=0
 Size=50
-TextColor=FFFFFF,0,50,8000,50,75,FF00,75,(Framerate,1)
-[Layer52]
+TextColor=FFFFFF,0,50,8000,50,75,FF00,75,(GPU1 usage,1)
+[Layer51]
 Name=
 Text="GPU1 PerfCap mask\n<G=GPU1 PerfCap mask> %GPU1 PerfCap mask% "
 PositionX=0
@@ -834,14 +831,201 @@ ExtentX=0
 ExtentY=0
 ExtentOrigin=0
 FixedAlignment=1
-[Layer53]
+[Layer52]
 Name=Framerate Graph
-Text=Framerate\n<G=Framerate,0,-2,1,0,140,80> <FR> FPS
+Text=Framerate\n<G=Framerate,0,-2,1,0,140,0> <FR> FPS
 PositionX=-37
-PositionY=-27
+PositionY=-26
 ExtentX=-27
 ExtentY=-3
 ExtentOrigin=0
 Size=50
 TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate,0)
 BgndColor=80000000
+[Layer53]
+Name=CPU1 usage graph
+Text=CPU1\n<G=CPU1 usage,33,26,1,0,100,1>
+PositionX=-37
+PositionY=-43
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU1 usage,1)
+BgndColor=80000000
+[Layer54]
+Name=CPU2 usage graph
+Text=CPU2\n<G=CPU2 usage,33,26,1,0,100,1>
+PositionX=-43
+PositionY=-43
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU2 usage,1)
+BgndColor=80000000
+[Layer55]
+Name=CPU3 usage graph
+Text=CPU3\n<G=CPU3 usage,33,26,1,0,100,1>
+PositionX=-49
+PositionY=-43
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU3 usage,1)
+BgndColor=80000000
+[Layer56]
+Name=CPU4 usage graph
+Text=CPU4\n<G=CPU4 usage,33,26,1,0,100,1>
+PositionX=-55
+PositionY=-43
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU4 usage,1)
+BgndColor=80000000
+[Layer57]
+Name=CPU5 usage graph
+Text=CPU5\n<G=CPU5 usage,33,26,1,0,100,1>
+PositionX=-37
+PositionY=-46
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU5 usage,1)
+BgndColor=80000000
+[Layer58]
+Name=CPU6 usage graph
+Text=CPU6\n<G=CPU6 usage,33,26,1,0,100,1>
+PositionX=-43
+PositionY=-46
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU6 usage,1)
+BgndColor=80000000
+[Layer59]
+Name=CPU7 usage graph
+Text=CPU7\n<G=CPU7 usage,33,26,1,0,100,1>
+PositionX=-49
+PositionY=-46
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU7 usage,1)
+BgndColor=80000000
+[Layer60]
+Name=CPU8 usage graph
+Text=CPU8\n<G=CPU8 usage,33,26,1,0,100,1>
+PositionX=-55
+PositionY=-46
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU8 usage,1)
+BgndColor=80000000
+[Layer61]
+Name=CPU9 usage graph
+Text=CPU9\n<G=CPU9 usage,33,26,1,0,100,1>
+PositionX=-37
+PositionY=-49
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU9 usage,1)
+BgndColor=80000000
+[Layer62]
+Name=CPU10 usage graph
+Text=CPU10\n<G=CPU10 usage,33,26,1,0,100,1>
+PositionX=-43
+PositionY=-49
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU10 usage,1)
+BgndColor=80000000
+[Layer63]
+Name=CPU11 usage graph
+Text=CPU11\n<G=CPU11 usage,33,26,1,0,100,1>
+PositionX=-49
+PositionY=-49
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU11 usage,1)
+BgndColor=80000000
+[Layer64]
+Name=CPU12 usage graph
+Text=CPU12\n<G=CPU12 usage,33,26,1,0,100,1>
+PositionX=-55
+PositionY=-49
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU12 usage,1)
+BgndColor=80000000
+[Layer65]
+Name=CPU13 usage graph
+Text=CPU13\n<G=CPU13 usage,33,26,1,0,100,1>
+PositionX=-37
+PositionY=-52
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU13 usage,1)
+BgndColor=80000000
+[Layer66]
+Name=CPU14 usage graph
+Text=CPU14\n<G=CPU14 usage,33,26,1,0,100,1>
+PositionX=-43
+PositionY=-52
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU14 usage,1)
+BgndColor=80000000
+[Layer67]
+Name=CPU15 usage graph
+Text=CPU15\n<G=CPU15 usage,33,26,1,0,100,1>
+PositionX=-49
+PositionY=-52
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU15 usage,1)
+BgndColor=80000000
+[Layer68]
+Name=CPU16 usage graph
+Text=CPU16\n<G=CPU16 usage,33,26,1,0,100,1>
+PositionX=-55
+PositionY=-52
+ExtentX=-5
+ExtentY=-3
+ExtentOrigin=0
+Size=50
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU16 usage,1)
+BgndColor=80000000
+[Layer69]
+Name=CPU_GLOBAL temperature graph
+Text="                 %CPU temperature% °C\n<G=CPU temperature,65,120,1,0,100,0>"
+PositionX=-61
+PositionY=-43
+ExtentX=-12
+ExtentY=-12
+ExtentOrigin=0
+FixedAlignment=1
+Size=50
+TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(CPU temperature,1)
