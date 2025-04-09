@@ -13,7 +13,7 @@ PingAddr=
 [General]
 Sources=45
 Tables=0
-Layers=42
+Layers=48
 [Source0]
 Name=CPU1 usage
 Units=%
@@ -333,7 +333,7 @@ ID=GPU1 PerfCap mask
 Name=Framerate Graph
 Text=Framerate: %Framerate% FPS\n<G=Framerate,198,26,1,0,145,1>
 PositionX=0
-PositionY=-1
+PositionY=-3
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -345,7 +345,7 @@ BgndColor=80000000
 Name=Frametime graph
 Text=Frametime: %Frametime% ms\n<G=Frametime,198,26,1,0,20,1>
 PositionX=0
-PositionY=-4
+PositionY=-6
 ExtentX=-36
 ExtentY=-2
 ExtentOrigin=0
@@ -395,7 +395,7 @@ TextColor=FF00
 Name=CPU_GLOBAL usage graph
 Text=CPU: %CPU usage%%\n<G=CPU usage,198,37,1,0,100,1>
 PositionX=0
-PositionY=-17
+PositionY=-19
 ExtentX=-36
 ExtentY=-3
 ExtentOrigin=0
@@ -417,7 +417,7 @@ BgndColor=80000000
 Name=CPU1 usage graph
 Text=CPU1\n<G=CPU1 usage,50,26,1,0,100,1>
 PositionX=0
-PositionY=-21
+PositionY=-23
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -428,7 +428,7 @@ BgndColor=80000000
 Name=CPU2 usage graph
 Text=CPU2\n<G=CPU2 usage,50,26,1,0,100,1>
 PositionX=-9
-PositionY=-21
+PositionY=-23
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -439,7 +439,7 @@ BgndColor=80000000
 Name=CPU3 usage graph
 Text=CPU3\n<G=CPU3 usage,50,26,1,0,100,1>
 PositionX=-18
-PositionY=-21
+PositionY=-23
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -450,7 +450,7 @@ BgndColor=80000000
 Name=CPU4 usage graph
 Text=CPU4\n<G=CPU4 usage,50,26,1,0,100,1>
 PositionX=-27
-PositionY=-21
+PositionY=-23
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -461,7 +461,7 @@ BgndColor=80000000
 Name=CPU5 usage graph
 Text=CPU5\n<G=CPU5 usage,50,26,1,0,100,1>
 PositionX=0
-PositionY=-24
+PositionY=-26
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -472,7 +472,7 @@ BgndColor=80000000
 Name=CPU6 usage graph
 Text=CPU6\n<G=CPU6 usage,50,26,1,0,100,1>
 PositionX=-9
-PositionY=-24
+PositionY=-26
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -483,7 +483,7 @@ BgndColor=80000000
 Name=CPU7 usage graph
 Text=CPU7\n<G=CPU7 usage,50,26,1,0,100,1>
 PositionX=-18
-PositionY=-24
+PositionY=-26
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -494,7 +494,7 @@ BgndColor=80000000
 Name=CPU8 usage graph
 Text=CPU8\n<G=CPU8 usage,50,26,1,0,100,1>
 PositionX=-27
-PositionY=-24
+PositionY=-26
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -505,7 +505,7 @@ BgndColor=80000000
 Name=CPU9 usage graph
 Text=CPU9\n<G=CPU9 usage,50,26,1,0,100,1>
 PositionX=0
-PositionY=-27
+PositionY=-29
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -516,7 +516,7 @@ BgndColor=80000000
 Name=CPU10 usage graph
 Text=CPU10\n<G=CPU10 usage,50,26,1,0,100,1>
 PositionX=-9
-PositionY=-27
+PositionY=-29
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -527,7 +527,7 @@ BgndColor=80000000
 Name=CPU11 usage graph
 Text=CPU11\n<G=CPU11 usage,50,26,1,0,100,1>
 PositionX=-18
-PositionY=-27
+PositionY=-29
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -538,7 +538,7 @@ BgndColor=80000000
 Name=CPU12 usage graph
 Text=CPU12\n<G=CPU12 usage,50,26,1,0,100,1>
 PositionX=-27
-PositionY=-27
+PositionY=-29
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -549,7 +549,7 @@ BgndColor=80000000
 Name=CPU13 usage graph
 Text=CPU13\n<G=CPU13 usage,50,26,1,0,100,1>
 PositionX=0
-PositionY=-30
+PositionY=-32
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -560,7 +560,7 @@ BgndColor=80000000
 Name=CPU14 usage graph
 Text=CPU14\n<G=CPU14 usage,50,26,1,0,100,1>
 PositionX=-9
-PositionY=-30
+PositionY=-32
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -571,7 +571,7 @@ BgndColor=80000000
 Name=CPU15 usage graph
 Text=CPU15\n<G=CPU15 usage,50,26,1,0,100,1>
 PositionX=-18
-PositionY=-30
+PositionY=-32
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -582,7 +582,7 @@ BgndColor=80000000
 Name=CPU16 usage graph
 Text=CPU16\n<G=CPU16 usage,50,26,1,0,100,1>
 PositionX=-27
-PositionY=-30
+PositionY=-32
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -593,7 +593,7 @@ BgndColor=80000000
 Name=CPU_GLOBAL temperature graph
 Text="                                                            %CPU temperature% °C\n<G=CPU temperature,198,37,1,0,100,0>"
 PositionX=0
-PositionY=-17
+PositionY=-19
 ExtentX=-36
 ExtentY=-3
 ExtentOrigin=0
@@ -604,7 +604,7 @@ TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(CPU temperature,1)
 Name=GPU core usage graph
 Text=GPU CORE: %GPU1 usage% %\n<G=GPU1 usage,198,37,1,0,100,1>
 PositionX=0
-PositionY=-8
+PositionY=-10
 ExtentX=-36
 ExtentY=-4
 ExtentOrigin=0
@@ -616,7 +616,7 @@ BgndColor=80000000
 Name=GPU core temperature graph
 Text="                                                    %GPU1 temperature% °C / \n<G=GPU1 temperature,198,37,1,0,100,0>"
 PositionX=0
-PositionY=-8
+PositionY=-10
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -627,7 +627,7 @@ TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature,1)
 Name=GPU core hotspot temperature graph
 Text="                                                            %GPU1 temperature Hotsopt% °C \n<G=GPU1 temperature Hotsopt,198,37,1,0,100,0>"
 PositionX=0
-PositionY=-8
+PositionY=-10
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -638,7 +638,7 @@ TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature Hotsop
 Name=GPU power graph
 Text=GPU: %GPU1 power% W \n<G=GPU1 power,99,37,1,0,280,0>
 PositionX=-18
-PositionY=-12
+PositionY=-14
 ExtentX=-7
 ExtentY=-1
 ExtentOrigin=0
@@ -649,7 +649,7 @@ BgndColor=80000000
 Name=GPU clock graph
 Text="                        %GPU1 clock% MHz \n<G=GPU1 clock,99,37,1,0,3000,0>"
 PositionX=-18
-PositionY=-12
+PositionY=-14
 ExtentX=-7
 ExtentY=-1
 ExtentOrigin=0
@@ -659,7 +659,7 @@ TextColor=FF8040
 Name=GPU voltage graph
 Text="             %GPU1 voltage% mV \n<G=GPU1 voltage,99,37,1,800,1200,0>"
 PositionX=-18
-PositionY=-12
+PositionY=-14
 ExtentX=-7
 ExtentY=-1
 ExtentOrigin=0
@@ -669,7 +669,7 @@ TextColor=FFFF00
 Name=GPU memory usage graph
 Text=GPU MEM: %GPU1 memory usage percent% %\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
 PositionX=0
-PositionY=-12
+PositionY=-14
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -681,7 +681,7 @@ BgndColor=80000000
 Name=GPU memory usage / process graph
 Text="              / %GPU1 memory usage percent \ process% %\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
 PositionX=0
-PositionY=-12
+PositionY=-14
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -691,7 +691,7 @@ Size=50
 Name=GPU memory temperature graph
 Text="                           %GPU1 memory temperature% °C\n<G=GPU1 memory temperature,99,37,1,0,100,0>"
 PositionX=0
-PositionY=-12
+PositionY=-14
 ExtentX=0
 ExtentY=0
 ExtentOrigin=0
@@ -702,7 +702,7 @@ TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 memory temperature
 Name=CPU name label
 Text=CPU: AMD %CPU% @ %CPU clock% MHz
 PositionX=0
-PositionY=-16
+PositionY=-18
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
@@ -712,7 +712,7 @@ BgndColor=CD000000
 Name=GPU name label
 Text=GPU: NVIDIA %GPU% %VRAM%
 PositionX=0
-PositionY=-7
+PositionY=-9
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
@@ -723,7 +723,7 @@ BgndColor=CD000000
 Name=RAM label
 Text=RAM: %RAM% DDR5 @ 6000 MHz CL30
 PositionX=0
-PositionY=-33
+PositionY=-35
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
@@ -733,7 +733,7 @@ BgndColor=CD000000
 Name=
 Text=<APP> | <EXE>
 PositionX=0
-PositionY=0
+PositionY=-2
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
@@ -744,7 +744,7 @@ BgndColor=CD000000
 Name=CPU power graph
 Text="                               %CPU power% W\n<G=CPU power,198,37,1,0,120,0>"
 PositionX=0
-PositionY=-17
+PositionY=-19
 ExtentX=-36
 ExtentY=-2
 ExtentOrigin=0
@@ -755,7 +755,7 @@ TextColor=FFFF00
 Name=RAM commit charge usage graph
 Text=RAM: %Commit charge% MB\n<G=Commit charge,198,37,1,0,65536,1>
 PositionX=0
-PositionY=-34
+PositionY=-36
 ExtentX=0
 ExtentY=0
 ExtentOrigin=8
@@ -766,7 +766,7 @@ BgndColor=80000000
 Name=GPU name label
 Text=Limit: %GPU1 PerfCap mask%
 PositionX=-1
-PositionY=-11
+PositionY=-13
 ExtentX=-34
 ExtentY=-1
 ExtentOrigin=0
@@ -774,9 +774,75 @@ FixedAlignment=1
 Size=50
 [Layer41]
 Name=
-Text=%Date% - <TIME=%H:%M:%S>
+Text=<TIME=%H:%M:%S> - %Date%
 PositionX=0
-PositionY=-38
+PositionY=0
+ExtentX=-36
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FFFFFF
+BgndColor=CD000000
+[Layer42]
+Name=Benchmark mode data
+Text=MIN: <FRMIN>
+PositionX=0
+PositionY=-41
+ExtentX=-12
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+Size=75
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate Min,0)
+[Layer43]
+Name=Benchmark mode data
+Text=AVG: <FRAVG>
+PositionX=-12
+PositionY=-41
+ExtentX=-12
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+Size=75
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate Avg,0)
+[Layer44]
+Name=Benchmark mode data
+Text=MAX: <FRMAX>
+PositionX=-24
+PositionY=-41
+ExtentX=-12
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+Size=75
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate Max,0)
+[Layer45]
+Name=Benchmark mode data
+Text=1% LOW: <FR10L>
+PositionX=0
+PositionY=-42
+ExtentX=-18
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+Size=75
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate 1% Low,0)
+[Layer46]
+Name=Benchmark mode data
+Text=0.1% LOW: <FR01L>
+PositionX=-18
+PositionY=-42
+ExtentX=-18
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+Size=75
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate 0.1% Low,0)
+[Layer47]
+Name=Benchmark data
+Text="           Benchmark data"
+PositionX=0
+PositionY=-40
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
