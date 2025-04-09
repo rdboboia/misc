@@ -1,0 +1,483 @@
+[Master]
+Implementation=2
+FontFace=Unispace
+FontHeight=-9
+FontWeight=400
+ZoomRatio=2
+[Settings]
+Name=
+RefreshPeriod=1000
+EmbeddedImage=
+PingAddr=
+[General]
+Sources=27
+Tables=0
+Layers=28
+[Source0]
+Name=CPU1 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU1 usage
+[Source1]
+Name=CPU2 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU2 usage
+[Source2]
+Name=CPU3 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU3 usage
+[Source3]
+Name=CPU4 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU4 usage
+[Source4]
+Name=CPU5 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU5 usage
+[Source5]
+Name=CPU6 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU6 usage
+[Source6]
+Name=CPU7 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU7 usage
+[Source7]
+Name=CPU8 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU8 usage
+[Source8]
+Name=CPU9 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU9 usage
+[Source9]
+Name=CPU10 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU10 usage
+[Source10]
+Name=CPU11 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU11 usage
+[Source11]
+Name=CPU12 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU12 usage
+[Source12]
+Name=CPU1 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU1 temperature
+[Source13]
+Name=CPU3 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU3 temperature
+[Source14]
+Name=CPU5 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU5 temperature
+[Source15]
+Name=CPU7 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU7 temperature
+[Source16]
+Name=CPU9 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU9 temperature
+[Source17]
+Name=CPU11 temperature
+Units=°C
+Format=
+Formula=
+Provider=HAL
+ID=CPU11 temperature
+[Source18]
+Name=CPU usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=CPU usage
+[Source19]
+Name=CPU power
+Units=W
+Format=
+Formula=x*100
+Provider=HAL
+ID=CPU power
+[Source20]
+Name=GPU1 usage
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 usage
+[Source21]
+Name=GPU1 memory usage percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory usage percent
+[Source22]
+Name=GPU1 power percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 power percent
+[Source23]
+Name=GPU1 memory usage \ process
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 memory usage \ process
+[Source24]
+Name=Commit charge
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=Commit charge
+[Source25]
+Name=RAM usage percent
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage percent
+[Source26]
+Name=RAM usage percent \ process
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage percent \ process
+[Layer0]
+Name=
+Text=<G=CPU1 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-10
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU1 usage,1)
+BgndColor=80000000
+BorderColor=FFFF8000
+[Layer1]
+Name=
+Text=<G=CPU2 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-11
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU2 usage,1)
+BgndColor=80000000
+[Layer2]
+Name=
+Text=<G=CPU3 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-12
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU3 usage,1)
+BgndColor=80000000
+[Layer3]
+Name=
+Text=<G=CPU4 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-13
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU4 usage,1)
+BgndColor=80000000
+[Layer4]
+Name=
+Text=<G=CPU5 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-14
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU5 usage,1)
+BgndColor=80000000
+[Layer5]
+Name=
+Text=<G=CPU6 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-15
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU6 usage,1)
+BgndColor=80000000
+[Layer6]
+Name=
+Text=<G=CPU7 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-16
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU7 usage,1)
+BgndColor=80000000
+[Layer7]
+Name=
+Text=<G=CPU8 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-17
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU8 usage,1)
+BgndColor=80000000
+[Layer8]
+Name=
+Text=<G=CPU9 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-18
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU9 usage,1)
+BgndColor=80000000
+[Layer9]
+Name=
+Text=<G=CPU10 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-19
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU10 usage,1)
+BgndColor=80000000
+[Layer10]
+Name=
+Text=<G=CPU11 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-20
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU11 usage,1)
+BgndColor=80000000
+[Layer11]
+Name=
+Text=<G=CPU12 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-21
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU12 usage,1)
+BgndColor=80000000
+[Layer12]
+Name=
+Text=<G=Framerate,0,0,1,0,150,1>
+PositionX=0
+PositionY=-1
+ExtentX=-33
+ExtentY=-1
+ExtentOrigin=0
+TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate,0)
+BgndColor=80000000
+[Layer13]
+Name=
+Text=<G=Frametime,0,0,1,0,20,1>
+PositionX=-8
+PositionY=0
+ExtentX=-25
+ExtentY=-1
+ExtentOrigin=0
+TextColor=FF00,0,10,C0C0C0,10,20,FF0000,20,(Frametime,0)
+BgndColor=80000000
+[Layer14]
+Name=
+Text=<G=GPU1 memory usage percent,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-6
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,30,8000,30,60,FF00,60,90,FF0000,90,100(GPU1 memory usage percent,1)
+BgndColor=80000000
+[Layer15]
+Name=
+Text=<G=GPU1 power percent,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-5
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,8000,25,50,FF00,50,80,FF0000,80,100(GPU1 power percent,0)
+BgndColor=80000000
+[Layer16]
+Name=
+Text=<G=CPU usage,0,0,1,0,100,8>
+PositionX=-5
+PositionY=-22
+ExtentX=-6
+ExtentY=-1
+ExtentOrigin=0
+TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,100(CPU usage,1)
+BgndColor=80000000
+[Layer17]
+Name=
+Text=<G=Commit charge,0,0,1,0,49152,8>
+PositionX=-4
+PositionY=-24
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=8
+TextColor=FF8080,0,32000,FFFF00,32000,40000,FF0000,40000,48000(Commit charge,0)
+BgndColor=80000000
+[Layer18]
+Name=
+Text=APP: <EXE>
+PositionX=0
+PositionY=-60
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FF8000
+BgndColor=80000000
+[Layer19]
+Name=
+Text=RES: <RES>
+PositionX=0
+PositionY=-59
+ExtentX=-9
+ExtentY=-1
+ExtentOrigin=0
+TextColor=80C0
+BgndColor=80000000
+[Layer20]
+Name=
+Text=<G=RAM usage percent,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-24
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+[Layer21]
+Name=
+Text=<G=GPU1 memory usage \ process,0,0,1,0,16384,8>
+PositionX=-4
+PositionY=-6
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+[Layer22]
+Name=
+Text=<G=RAM usage percent \ process,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-24
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+FixedAlignment=1
+TextColor=FFFFFF
+[Layer23]
+Name=
+Text=CPU: Intel(R) Core(TM) i7-5820K @ 4.00GHz
+PositionX=-270
+PositionY=-59
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=80FF
+BgndColor=80000000
+[Layer24]
+Name=
+Text=GPU: %GPUFull%
+PositionX=-270
+PositionY=-60
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=8000
+BgndColor=80000000
+[Layer25]
+Name=
+Text=RAM: %RAM% DDR4 @ 2400MHz
+PositionX=-270
+PositionY=-58
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+TextColor=FF8080
+BgndColor=80000000
+[Layer26]
+Name=
+Text=%VRAM%
+PositionX=-307
+PositionY=-60
+ExtentX=-5
+ExtentY=-1
+ExtentOrigin=5
+TextColor=8000
+BgndColor=80000000
+[Layer27]
+Name=
+Text=<G=GPU1 usage,0,0,1,0,100,8>
+PositionX=-4
+PositionY=-4
+ExtentX=-7
+ExtentY=-1
+ExtentOrigin=0
+TextColor=FFFFFF,0,50,8000,50,75,FF00,75,100(GPU1 power percent,1)
+BgndColor=80000000
