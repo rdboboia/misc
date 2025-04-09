@@ -3,12 +3,11 @@ Here you can find my custom overlays for MSI Afterburner + RTSS.
 
 My current overlay version is RTSS only, which is easy to import and doesn't include any app settings.
 
-
-
 ## Software
 
-### IMPORTANT NOTE
-Monitoring GPU's power (TDP) percentage on NVIDIA cards seem to take a lot of resources, so this metric should be avoided (it is in my monitoring profiles).
+### IMPORTANT NOTES
+- Low-level IO driver should be enabled for all metrics to be available.
+- Monitoring GPU's power (TDP) percentage (at least on NVIDIA cards) seem to take a lot of resources, so this metric should be avoided (it is in my monitoring profiles).
 
 ### MSI Afterburner (v4.6.6 Beta 5)
 Note that some APP config is also included.
