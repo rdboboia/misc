@@ -11,9 +11,9 @@ RefreshPeriod=100
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=63
+Sources=66
 Tables=0
-Layers=62
+Layers=64
 [Source0]
 Name=CPU1 usage
 Units=%
@@ -281,174 +281,195 @@ Formula=
 Provider=HAL
 ID=GPU1 bus usage
 [Source38]
+Name=Commit charge percent
+Units=%
+Format=
+Formula=(x / 65536) * 100
+Provider=HAL
+ID=Commit charge
+[Source39]
 Name=Commit charge
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=Commit charge
-[Source39]
+[Source40]
 Name=RAM usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent
-[Source40]
+[Source41]
+Name=RAM usage
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage
+[Source42]
 Name=RAM usage percent \ process
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent \ process
-[Source41]
+[Source43]
+Name=RAM usage \ process
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage \ process
+[Source44]
 Name=Display2 refresh rate
 Units=Hz
 Format=
 Formula=
 Provider=HAL
 ID=Display2 refresh rate
-[Source42]
+[Source45]
 Name=CPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=CPUBusy
-[Source43]
+[Source46]
 Name=GPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=GPUBusy
-[Source44]
+[Source47]
 Name=GPU1 PerfCap mask
 Units=
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 PerfCap mask
-[Source45]
+[Source48]
 Name=CPU1 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU1 power
-[Source46]
+[Source49]
 Name=CPU3 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU3 power
-[Source47]
+[Source50]
 Name=CPU5 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU5 power
-[Source48]
+[Source51]
 Name=CPU7 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU7 power
-[Source49]
+[Source52]
 Name=CPU9 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU9 power
-[Source50]
+[Source53]
 Name=CPU11 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU11 power
-[Source51]
+[Source54]
 Name=CPU13 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU13 power
-[Source52]
+[Source55]
 Name=CPU15 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU15 power
-[Source53]
+[Source56]
 Name=Name - Motherboard
 Units=
 Format=%s
 Formula=
 Provider=LHM
 ID=/motherboard
-[Source54]
+[Source57]
 Name=Voltage #1 - Vcore
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/0
-[Source55]
+[Source58]
 Name=Voltage #5 - SoC
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/4
-[Source56]
+[Source59]
 Name=Voltage #6 - MISC
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/5
-[Source57]
+[Source60]
 Name=Voltage #7 - MEM
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/6
-[Source58]
+[Source61]
 Name=Temperature #1 - System
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/0
-[Source59]
+[Source62]
 Name=Temperature #2 - PCH
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/1
-[Source60]
+[Source63]
 Name=Temperature #3 - CPU
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/2
-[Source61]
+[Source64]
 Name=Temperature #4 - PCIEX16
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/3
-[Source62]
+[Source65]
 Name=Temperature #5 - VRM MOS
 Units=°C
 Format=
@@ -793,7 +814,7 @@ Size=50
 TextColor=FFFF00
 [Layer31]
 Name=GPU memory usage graph
-Text=GPU MEM: %GPU1 memory usage percent% %\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
+Text=GPU MEM:         %GPU1 memory usage percent% %\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -805,7 +826,7 @@ TextColor=C0C0C0,0,30,8000,30,60,FF00,60,90,FF0000,90,(GPU1 memory usage percent
 BgndColor=80000000
 [Layer32]
 Name=GPU memory usage / process graph
-Text="              / %GPU1 memory usage percent \ process% %\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
+Text="          %GPU1 memory usage percent \ process% % /\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -879,7 +900,7 @@ Size=50
 TextColor=FFFF00
 [Layer39]
 Name=RAM commit charge usage graph
-Text=RAM: %Commit charge% MB\n<G=Commit charge,198,37,1,0,65536,1>
+Text=RAM:                                              %Commit charge% MB (%Commit charge percent% %)\n<G=Commit charge,198,37,1,0,65536,1>
 PositionX=0
 PositionY=-41
 ExtentX=0
@@ -900,7 +921,7 @@ FixedAlignment=1
 Size=50
 [Layer41]
 Name=
-Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.1
+Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.2
 PositionX=0
 PositionY=0
 ExtentX=-36
@@ -1121,3 +1142,22 @@ ExtentOrigin=0
 FixedAlignment=1
 Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #5 - VRM MOS,1)
+[Layer62]
+Name=RAM usage graph
+Text="                             %RAM usage% MB (%RAM usage percent% %)\n<G=RAM usage percent,198,37,1,0,100,1>"
+PositionX=0
+PositionY=-41
+ExtentX=0
+ExtentY=0
+ExtentOrigin=8
+Size=50
+TextColor=FF8080
+[Layer63]
+Name=RAM usage / process graph
+Text="          %RAM usage \ process% MB (%RAM usage percent \ process% %)\n<G=RAM usage percent \ process,198,37,1,0,100,1>"
+PositionX=0
+PositionY=-41
+ExtentX=0
+ExtentY=0
+ExtentOrigin=8
+Size=50
