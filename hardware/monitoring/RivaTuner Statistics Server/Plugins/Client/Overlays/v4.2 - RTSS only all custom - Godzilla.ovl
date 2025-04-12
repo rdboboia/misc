@@ -912,11 +912,11 @@ BgndColor=80000000
 [Layer40]
 Name=GPU name label
 Text=Limit: %GPU1 PerfCap mask%
-PositionX=-1
-PositionY=-13
-ExtentX=-34
+PositionX=-18
+PositionY=-17
+ExtentX=-18
 ExtentY=-1
-ExtentOrigin=0
+ExtentOrigin=6
 FixedAlignment=1
 Size=50
 [Layer41]
