@@ -11,9 +11,9 @@ RefreshPeriod=100
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=45
+Sources=66
 Tables=0
-Layers=48
+Layers=64
 [Source0]
 Name=CPU1 usage
 Units=%
@@ -281,54 +281,201 @@ Formula=
 Provider=HAL
 ID=GPU1 bus usage
 [Source38]
+Name=Commit charge percent
+Units=%
+Format=
+Formula=(x / 65536) * 100
+Provider=HAL
+ID=Commit charge
+[Source39]
 Name=Commit charge
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=Commit charge
-[Source39]
+[Source40]
 Name=RAM usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent
-[Source40]
+[Source41]
+Name=RAM usage
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage
+[Source42]
 Name=RAM usage percent \ process
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent \ process
-[Source41]
+[Source43]
+Name=RAM usage \ process
+Units=MB
+Format=
+Formula=
+Provider=HAL
+ID=RAM usage \ process
+[Source44]
 Name=Display2 refresh rate
 Units=Hz
 Format=
 Formula=
 Provider=HAL
 ID=Display2 refresh rate
-[Source42]
+[Source45]
 Name=CPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=CPUBusy
-[Source43]
+[Source46]
 Name=GPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=GPUBusy
-[Source44]
+[Source47]
 Name=GPU1 PerfCap mask
 Units=
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 PerfCap mask
+[Source48]
+Name=CPU1 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU1 power
+[Source49]
+Name=CPU3 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU3 power
+[Source50]
+Name=CPU5 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU5 power
+[Source51]
+Name=CPU7 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU7 power
+[Source52]
+Name=CPU9 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU9 power
+[Source53]
+Name=CPU11 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU11 power
+[Source54]
+Name=CPU13 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU13 power
+[Source55]
+Name=CPU15 power
+Units=W
+Format=%.1f
+Formula=
+Provider=HAL
+ID=CPU15 power
+[Source56]
+Name=Name - Motherboard
+Units=
+Format=%s
+Formula=
+Provider=LHM
+ID=/motherboard
+[Source57]
+Name=Voltage #1 - Vcore
+Units=V
+Format=%.3f
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/voltage/0
+[Source58]
+Name=Voltage #5 - SoC
+Units=V
+Format=%.3f
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/voltage/4
+[Source59]
+Name=Voltage #6 - MISC
+Units=V
+Format=%.3f
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/voltage/5
+[Source60]
+Name=Voltage #7 - MEM
+Units=V
+Format=%.3f
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/voltage/6
+[Source61]
+Name=Temperature #1 - System
+Units=°C
+Format=
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/temperature/0
+[Source62]
+Name=Temperature #2 - PCH
+Units=°C
+Format=
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/temperature/1
+[Source63]
+Name=Temperature #3 - CPU
+Units=°C
+Format=
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/temperature/2
+[Source64]
+Name=Temperature #4 - PCIEX16
+Units=°C
+Format=
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/temperature/3
+[Source65]
+Name=Temperature #5 - VRM MOS
+Units=°C
+Format=
+Formula=
+Provider=LHM
+ID=/lpc/it8696e/0/temperature/4
 [Layer0]
 Name=Framerate Graph
 Text=Framerate: %Framerate% FPS\n<G=Framerate,198,26,1,0,145,1>
@@ -667,7 +814,7 @@ Size=50
 TextColor=FFFF00
 [Layer31]
 Name=GPU memory usage graph
-Text=GPU MEM: %GPU1 memory usage percent% %\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
+Text=GPU MEM:         %GPU1 memory usage percent% %\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -679,7 +826,7 @@ TextColor=C0C0C0,0,30,8000,30,60,FF00,60,90,FF0000,90,(GPU1 memory usage percent
 BgndColor=80000000
 [Layer32]
 Name=GPU memory usage / process graph
-Text="              / %GPU1 memory usage percent \ process% %\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
+Text="          %GPU1 memory usage percent \ process% % /\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -723,7 +870,7 @@ BgndColor=CD000000
 Name=RAM label
 Text=RAM: %RAM% DDR5 @ 6000 MHz CL30
 PositionX=0
-PositionY=-35
+PositionY=-40
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
@@ -742,7 +889,7 @@ TextColor=FF8000
 BgndColor=CD000000
 [Layer38]
 Name=CPU power graph
-Text="                               %CPU power% W\n<G=CPU power,198,37,1,0,120,0>"
+Text="                            %CPU power% W\n<G=CPU power,198,37,1,0,120,0>"
 PositionX=0
 PositionY=-19
 ExtentX=-36
@@ -753,9 +900,9 @@ Size=50
 TextColor=FFFF00
 [Layer39]
 Name=RAM commit charge usage graph
-Text=RAM: %Commit charge% MB\n<G=Commit charge,198,37,1,0,65536,1>
+Text=RAM:                                              %Commit charge% MB (%Commit charge percent% %)\n<G=Commit charge,198,37,1,0,65536,1>
 PositionX=0
-PositionY=-36
+PositionY=-41
 ExtentX=0
 ExtentY=0
 ExtentOrigin=8
@@ -765,16 +912,16 @@ BgndColor=80000000
 [Layer40]
 Name=GPU name label
 Text=Limit: %GPU1 PerfCap mask%
-PositionX=-1
-PositionY=-13
-ExtentX=-34
+PositionX=-18
+PositionY=-17
+ExtentX=-18
 ExtentY=-1
-ExtentOrigin=0
+ExtentOrigin=6
 FixedAlignment=1
 Size=50
 [Layer41]
 Name=
-Text=<TIME=%H:%M:%S> - %Date%
+Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.2
 PositionX=0
 PositionY=0
 ExtentX=-36
@@ -787,7 +934,7 @@ BgndColor=CD000000
 Name=Benchmark mode data
 Text=MIN: <FRMIN>
 PositionX=0
-PositionY=-41
+PositionY=-46
 ExtentX=-12
 ExtentY=-1
 ExtentOrigin=0
@@ -798,7 +945,7 @@ TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate Min,0)
 Name=Benchmark mode data
 Text=AVG: <FRAVG>
 PositionX=-12
-PositionY=-41
+PositionY=-46
 ExtentX=-12
 ExtentY=-1
 ExtentOrigin=0
@@ -809,7 +956,7 @@ TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate Avg,0)
 Name=Benchmark mode data
 Text=MAX: <FRMAX>
 PositionX=-24
-PositionY=-41
+PositionY=-46
 ExtentX=-12
 ExtentY=-1
 ExtentOrigin=0
@@ -820,7 +967,7 @@ TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate Max,0)
 Name=Benchmark mode data
 Text=1% LOW: <FR10L>
 PositionX=0
-PositionY=-42
+PositionY=-47
 ExtentX=-18
 ExtentY=-1
 ExtentOrigin=0
@@ -831,7 +978,7 @@ TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate 1% Low,0)
 Name=Benchmark mode data
 Text=0.1% LOW: <FR01L>
 PositionX=-18
-PositionY=-42
+PositionY=-47
 ExtentX=-18
 ExtentY=-1
 ExtentOrigin=0
@@ -842,10 +989,175 @@ TextColor=FF0000,0,90,C0C0C0,90,115,FF00,115,(Framerate 0.1% Low,0)
 Name=Benchmark data
 Text="           Benchmark data"
 PositionX=0
-PositionY=-40
+PositionY=-45
 ExtentX=-36
 ExtentY=-1
 ExtentOrigin=0
 FixedAlignment=1
 TextColor=FF8000
 BgndColor=CD000000
+[Layer48]
+Name=CPU1 power graph
+Text="           %CPU1 power% W\n<G=CPU1 power,50,26,1,0,10,0>"
+PositionX=0
+PositionY=-23
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer49]
+Name=CPU3 power graph
+Text="           %CPU3 power% W\n<G=CPU3 power,50,26,1,0,10,0>"
+PositionX=-18
+PositionY=-23
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer50]
+Name=CPU5 power graph
+Text="           %CPU5 power% W\n<G=CPU5 power,50,26,1,0,10,0>"
+PositionX=0
+PositionY=-26
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer51]
+Name=CPU7 power graph
+Text="           %CPU7 power% W\n<G=CPU7 power,50,26,1,0,10,0>"
+PositionX=-18
+PositionY=-26
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer52]
+Name=CPU9 power graph
+Text="           %CPU9 power% W\n<G=CPU9 power,50,26,1,0,10,0>"
+PositionX=0
+PositionY=-29
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer53]
+Name=CPU11 power graph
+Text="           %CPU11 power% W\n<G=CPU11 power,50,26,1,0,10,0>"
+PositionX=-18
+PositionY=-29
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer54]
+Name=CPU13 power graph
+Text="           %CPU13 power% W\n<G=CPU13 power,50,26,1,0,10,0>"
+PositionX=0
+PositionY=-32
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer55]
+Name=CPU15 power graph
+Text="           %CPU15 power% W\n<G=CPU15 power,50,26,1,0,10,0>"
+PositionX=-18
+PositionY=-32
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+Size=50
+TextColor=FFFF00
+[Layer56]
+Name=CPU voltage graph
+Text="                                          %Voltage #1 - Vcore% V\n<G=Voltage #1 - Vcore,198,37,1,0.8,1.3,0>"
+PositionX=0
+PositionY=-19
+ExtentX=-36
+ExtentY=-2
+ExtentOrigin=0
+FixedAlignment=1
+Size=50
+TextColor=FFFFFF
+[Layer57]
+Name=Motherboard label
+Text=%Name - Motherboard%
+PositionX=0
+PositionY=-35
+ExtentX=-36
+ExtentY=-1
+ExtentOrigin=0
+TextColor=FF0000
+BgndColor=CD000000
+[Layer58]
+Name=Motherboard system temperature graph
+Text=SYS: %Temperature #1 - System% °C\n<G=Temperature #1 - System,198,37,1,0,100,0>
+PositionX=0
+PositionY=-36
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+Size=50
+TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #1 - System,1)
+BgndColor=82000000
+[Layer59]
+Name=Motherboard PCH temperature graph
+Text="                 PCH: %Temperature #2 - PCH% °C\n<G=Temperature #2 - PCH,198,37,1,0,100,0>"
+PositionX=0
+PositionY=-36
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+Size=50
+TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #2 - PCH,1)
+[Layer60]
+Name=Motherboard PCIEX16 temperature graph
+Text="                                 PCI: %Temperature #4 - PCIEX16% °C\n<G=Temperature #4 - PCIEX16,198,37,1,0,100,0>"
+PositionX=0
+PositionY=-36
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+Size=50
+TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #4 - PCIEX16,1)
+[Layer61]
+Name=Motherboard VRM MOS temperature graph
+Text="                                                  VRM: %Temperature #5 - VRM MOS% °C\n<G=Temperature #5 - VRM MOS,198,37,1,0,100,0>"
+PositionX=0
+PositionY=-36
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
+Size=50
+TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #5 - VRM MOS,1)
+[Layer62]
+Name=RAM usage graph
+Text="                             %RAM usage% MB (%RAM usage percent% %)\n<G=RAM usage percent,198,37,1,0,100,1>"
+PositionX=0
+PositionY=-41
+ExtentX=0
+ExtentY=0
+ExtentOrigin=8
+Size=50
+TextColor=FF8080
+[Layer63]
+Name=RAM usage / process graph
+Text="          %RAM usage \ process% MB (%RAM usage percent \ process% %)\n<G=RAM usage percent \ process,198,37,1,0,100,1>"
+PositionX=0
+PositionY=-41
+ExtentX=0
+ExtentY=0
+ExtentOrigin=8
+Size=50
