@@ -26,4 +26,4 @@ Some additional configuration might be needed if your data sources don't match m
 No v3 RTSS only screenshot is posted since by itself doesn't mean much.
 
 However, my RTSS overlay v4 is a new overlay build for RTSS only from the ground up. Here's how it looks:
-![image](https://github.com/user-attachments/assets/4835bbbd-029b-4db5-968f-7389cd6cb5f8)
+![image](https://github.com/user-attachments/assets/1426faf1-bc39-4daa-9845-7efe59f3cc5a)
