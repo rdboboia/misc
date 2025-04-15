@@ -8,7 +8,7 @@ Note that here I'm mixing MSI Afterburner + RTSS overlays.
 The whole overlay is done exclusively in RTSS :)
 
 ## Current design
-![image](https://github.com/user-attachments/assets/037a289a-dadd-4207-b5cd-068ae09d02c5)
+![image](https://github.com/user-attachments/assets/1426faf1-bc39-4daa-9845-7efe59f3cc5a)
 
 ## Changes from initial release
 - Core power.
