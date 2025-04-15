@@ -11,7 +11,7 @@ RefreshPeriod=100
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=66
+Sources=67
 Tables=0
 Layers=64
 [Source0]
@@ -225,251 +225,258 @@ Formula=
 Provider=HAL
 ID=GPU1 power
 [Source30]
+Name=GPU1 memory usage
+Units=GB
+Format=%.2f
+Formula=x / 1024
+Provider=HAL
+ID=GPU1 memory usage
+[Source31]
 Name=GPU1 memory usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory usage percent
-[Source31]
+[Source32]
 Name=GPU1 memory usage \ process
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory usage \ process
-[Source32]
+[Source33]
 Name=GPU1 memory usage percent \ process
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory usage percent \ process
-[Source33]
+[Source34]
 Name=GPU1 temperature
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature
-[Source34]
+[Source35]
 Name=GPU1 temperature Hotsopt
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature 2
-[Source35]
+[Source36]
 Name=GPU1 memory temperature
 Units=°C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory temperature
-[Source36]
+[Source37]
 Name=GPU1 memory controller usage
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 memory controller usage
-[Source37]
+[Source38]
 Name=GPU1 bus usage
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 bus usage
-[Source38]
+[Source39]
 Name=Commit charge percent
 Units=%
 Format=
 Formula=(x / 65536) * 100
 Provider=HAL
 ID=Commit charge
-[Source39]
+[Source40]
 Name=Commit charge
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=Commit charge
-[Source40]
+[Source41]
 Name=RAM usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent
-[Source41]
+[Source42]
 Name=RAM usage
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage
-[Source42]
+[Source43]
 Name=RAM usage percent \ process
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent \ process
-[Source43]
+[Source44]
 Name=RAM usage \ process
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage \ process
-[Source44]
+[Source45]
 Name=Display2 refresh rate
 Units=Hz
 Format=
 Formula=
 Provider=HAL
 ID=Display2 refresh rate
-[Source45]
+[Source46]
 Name=CPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=CPUBusy
-[Source46]
+[Source47]
 Name=GPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=GPUBusy
-[Source47]
+[Source48]
 Name=GPU1 PerfCap mask
 Units=
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 PerfCap mask
-[Source48]
+[Source49]
 Name=CPU1 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU1 power
-[Source49]
+[Source50]
 Name=CPU3 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU3 power
-[Source50]
+[Source51]
 Name=CPU5 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU5 power
-[Source51]
+[Source52]
 Name=CPU7 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU7 power
-[Source52]
+[Source53]
 Name=CPU9 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU9 power
-[Source53]
+[Source54]
 Name=CPU11 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU11 power
-[Source54]
+[Source55]
 Name=CPU13 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU13 power
-[Source55]
+[Source56]
 Name=CPU15 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU15 power
-[Source56]
+[Source57]
 Name=Name - Motherboard
 Units=
 Format=%s
 Formula=
 Provider=LHM
 ID=/motherboard
-[Source57]
+[Source58]
 Name=Voltage #1 - Vcore
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/0
-[Source58]
+[Source59]
 Name=Voltage #5 - SoC
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/4
-[Source59]
+[Source60]
 Name=Voltage #6 - MISC
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/5
-[Source60]
+[Source61]
 Name=Voltage #7 - MEM
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/6
-[Source61]
+[Source62]
 Name=Temperature #1 - System
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/0
-[Source62]
+[Source63]
 Name=Temperature #2 - PCH
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/1
-[Source63]
+[Source64]
 Name=Temperature #3 - CPU
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/2
-[Source64]
+[Source65]
 Name=Temperature #4 - PCIEX16
 Units=°C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/3
-[Source65]
+[Source66]
 Name=Temperature #5 - VRM MOS
 Units=°C
 Format=
@@ -562,7 +569,7 @@ TextColor=8000
 BgndColor=80000000
 [Layer8]
 Name=CPU1 usage graph
-Text=CPU1\n<G=CPU1 usage,50,26,1,0,100,1>
+Text=C1: %CPU1 usage% %\n<G=CPU1 usage,50,26,1,0,100,1>
 PositionX=0
 PositionY=-23
 ExtentX=0
@@ -573,7 +580,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU1 usage,1)
 BgndColor=80000000
 [Layer9]
 Name=CPU2 usage graph
-Text=CPU2\n<G=CPU2 usage,50,26,1,0,100,1>
+Text=C2: %CPU2 usage% %\n<G=CPU2 usage,50,26,1,0,100,1>
 PositionX=-9
 PositionY=-23
 ExtentX=0
@@ -584,7 +591,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU2 usage,1)
 BgndColor=80000000
 [Layer10]
 Name=CPU3 usage graph
-Text=CPU3\n<G=CPU3 usage,50,26,1,0,100,1>
+Text=C3: %CPU3 usage% %\n<G=CPU3 usage,50,26,1,0,100,1>
 PositionX=-18
 PositionY=-23
 ExtentX=0
@@ -595,7 +602,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU3 usage,1)
 BgndColor=80000000
 [Layer11]
 Name=CPU4 usage graph
-Text=CPU4\n<G=CPU4 usage,50,26,1,0,100,1>
+Text=C4: %CPU4 usage% %\n<G=CPU4 usage,50,26,1,0,100,1>
 PositionX=-27
 PositionY=-23
 ExtentX=0
@@ -606,7 +613,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU4 usage,1)
 BgndColor=80000000
 [Layer12]
 Name=CPU5 usage graph
-Text=CPU5\n<G=CPU5 usage,50,26,1,0,100,1>
+Text=C5: %CPU5 usage% %\n<G=CPU5 usage,50,26,1,0,100,1>
 PositionX=0
 PositionY=-26
 ExtentX=0
@@ -617,7 +624,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU5 usage,1)
 BgndColor=80000000
 [Layer13]
 Name=CPU6 usage graph
-Text=CPU6\n<G=CPU6 usage,50,26,1,0,100,1>
+Text=C6: %CPU6 usage% %\n<G=CPU6 usage,50,26,1,0,100,1>
 PositionX=-9
 PositionY=-26
 ExtentX=0
@@ -628,7 +635,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU6 usage,1)
 BgndColor=80000000
 [Layer14]
 Name=CPU7 usage graph
-Text=CPU7\n<G=CPU7 usage,50,26,1,0,100,1>
+Text=C7: %CPU7 usage% %\n<G=CPU7 usage,50,26,1,0,100,1>
 PositionX=-18
 PositionY=-26
 ExtentX=0
@@ -639,7 +646,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU7 usage,1)
 BgndColor=80000000
 [Layer15]
 Name=CPU8 usage graph
-Text=CPU8\n<G=CPU8 usage,50,26,1,0,100,1>
+Text=C8: %CPU8 usage% %\n<G=CPU8 usage,50,26,1,0,100,1>
 PositionX=-27
 PositionY=-26
 ExtentX=0
@@ -650,7 +657,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU8 usage,1)
 BgndColor=80000000
 [Layer16]
 Name=CPU9 usage graph
-Text=CPU9\n<G=CPU9 usage,50,26,1,0,100,1>
+Text=C9: %CPU9 usage% %\n<G=CPU9 usage,50,26,1,0,100,1>
 PositionX=0
 PositionY=-29
 ExtentX=0
@@ -661,7 +668,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU9 usage,1)
 BgndColor=80000000
 [Layer17]
 Name=CPU10 usage graph
-Text=CPU10\n<G=CPU10 usage,50,26,1,0,100,1>
+Text=C10: %CPU10 usage% %\n<G=CPU10 usage,50,26,1,0,100,1>
 PositionX=-9
 PositionY=-29
 ExtentX=0
@@ -672,7 +679,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU10 usage,1)
 BgndColor=80000000
 [Layer18]
 Name=CPU11 usage graph
-Text=CPU11\n<G=CPU11 usage,50,26,1,0,100,1>
+Text=C11: %CPU11 usage% %\n<G=CPU11 usage,50,26,1,0,100,1>
 PositionX=-18
 PositionY=-29
 ExtentX=0
@@ -683,7 +690,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU11 usage,1)
 BgndColor=80000000
 [Layer19]
 Name=CPU12 usage graph
-Text=CPU12\n<G=CPU12 usage,50,26,1,0,100,1>
+Text=C12: %CPU12 usage% %\n<G=CPU12 usage,50,26,1,0,100,1>
 PositionX=-27
 PositionY=-29
 ExtentX=0
@@ -694,7 +701,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU12 usage,1)
 BgndColor=80000000
 [Layer20]
 Name=CPU13 usage graph
-Text=CPU13\n<G=CPU13 usage,50,26,1,0,100,1>
+Text=C13: %CPU13 usage% %\n<G=CPU13 usage,50,26,1,0,100,1>
 PositionX=0
 PositionY=-32
 ExtentX=0
@@ -705,7 +712,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU13 usage,1)
 BgndColor=80000000
 [Layer21]
 Name=CPU14 usage graph
-Text=CPU14\n<G=CPU14 usage,50,26,1,0,100,1>
+Text=C14: %CPU14 usage% %\n<G=CPU14 usage,50,26,1,0,100,1>
 PositionX=-9
 PositionY=-32
 ExtentX=0
@@ -716,7 +723,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU14 usage,1)
 BgndColor=80000000
 [Layer22]
 Name=CPU15 usage graph
-Text=CPU15\n<G=CPU15 usage,50,26,1,0,100,1>
+Text=C15: %CPU15 usage% %\n<G=CPU15 usage,50,26,1,0,100,1>
 PositionX=-18
 PositionY=-32
 ExtentX=0
@@ -727,7 +734,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU15 usage,1)
 BgndColor=80000000
 [Layer23]
 Name=CPU16 usage graph
-Text=CPU16\n<G=CPU16 usage,50,26,1,0,100,1>
+Text=C16: %CPU16 usage% %\n<G=CPU16 usage,50,26,1,0,100,1>
 PositionX=-27
 PositionY=-32
 ExtentX=0
@@ -814,7 +821,7 @@ Size=50
 TextColor=FFFF00
 [Layer31]
 Name=GPU memory usage graph
-Text=GPU MEM:         %GPU1 memory usage percent% %\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
+Text=MEM:        %GPU1 memory usage% GB(%GPU1 memory usage percent%%)\n<G=GPU1 memory usage percent,99,37,1,0,100,1>
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -826,7 +833,7 @@ TextColor=C0C0C0,0,30,8000,30,60,FF00,60,90,FF0000,90,(GPU1 memory usage percent
 BgndColor=80000000
 [Layer32]
 Name=GPU memory usage / process graph
-Text="          %GPU1 memory usage percent \ process% % /\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
+Text="     %GPU1 memory usage percent \ process% % /\n<G=GPU1 memory usage percent \ process,99,37,1,0,100,1>"
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -921,7 +928,7 @@ FixedAlignment=1
 Size=50
 [Layer41]
 Name=
-Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.2
+Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.0.3
 PositionX=0
 PositionY=0
 ExtentX=-36
