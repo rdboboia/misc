@@ -11,9 +11,9 @@ RefreshPeriod=100
 EmbeddedImage=
 PingAddr=
 [General]
-Sources=67
+Sources=69
 Tables=0
-Layers=64
+Layers=65
 [Source0]
 Name=CPU1 usage
 Units=%
@@ -128,42 +128,42 @@ Provider=HAL
 ID=CPU16 usage
 [Source16]
 Name=CPU1 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=CPU1 temperature
 [Source17]
 Name=CPU3 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=CPU3 temperature
 [Source18]
 Name=CPU5 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=CPU5 temperature
 [Source19]
 Name=CPU7 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=CPU7 temperature
 [Source20]
 Name=CPU9 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=CPU9 temperature
 [Source21]
 Name=CPU11 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
@@ -184,7 +184,7 @@ Provider=HAL
 ID=CPU power
 [Source24]
 Name=CPU temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
@@ -254,21 +254,21 @@ Provider=HAL
 ID=GPU1 memory usage percent \ process
 [Source34]
 Name=GPU1 temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature
 [Source35]
 Name=GPU1 temperature Hotsopt
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 temperature 2
 [Source36]
 Name=GPU1 memory temperature
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=HAL
@@ -288,197 +288,211 @@ Formula=
 Provider=HAL
 ID=GPU1 bus usage
 [Source39]
+Name=GPU1 fan speed
+Units=%
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 fan speed
+[Source40]
+Name=GPU1 fan tachometer
+Units=RPM
+Format=
+Formula=
+Provider=HAL
+ID=GPU1 fan tachometer
+[Source41]
 Name=Commit charge percent
 Units=%
 Format=
 Formula=(x / 65536) * 100
 Provider=HAL
 ID=Commit charge
-[Source40]
+[Source42]
 Name=Commit charge
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=Commit charge
-[Source41]
+[Source43]
 Name=RAM usage percent
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent
-[Source42]
+[Source44]
 Name=RAM usage
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage
-[Source43]
+[Source45]
 Name=RAM usage percent \ process
 Units=%
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage percent \ process
-[Source44]
+[Source46]
 Name=RAM usage \ process
 Units=MB
 Format=
 Formula=
 Provider=HAL
 ID=RAM usage \ process
-[Source45]
+[Source47]
 Name=Display2 refresh rate
 Units=Hz
 Format=
 Formula=
 Provider=HAL
 ID=Display2 refresh rate
-[Source46]
+[Source48]
 Name=CPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=CPUBusy
-[Source47]
+[Source49]
 Name=GPUBusy
 Units=ms
 Format=
 Formula=
 Provider=PresentMon
 ID=GPUBusy
-[Source48]
+[Source50]
 Name=GPU1 PerfCap mask
 Units=
 Format=
 Formula=
 Provider=HAL
 ID=GPU1 PerfCap mask
-[Source49]
+[Source51]
 Name=CPU1 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU1 power
-[Source50]
+[Source52]
 Name=CPU3 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU3 power
-[Source51]
+[Source53]
 Name=CPU5 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU5 power
-[Source52]
+[Source54]
 Name=CPU7 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU7 power
-[Source53]
+[Source55]
 Name=CPU9 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU9 power
-[Source54]
+[Source56]
 Name=CPU11 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU11 power
-[Source55]
+[Source57]
 Name=CPU13 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU13 power
-[Source56]
+[Source58]
 Name=CPU15 power
 Units=W
 Format=%.1f
 Formula=
 Provider=HAL
 ID=CPU15 power
-[Source57]
+[Source59]
 Name=Name - Motherboard
 Units=
 Format=%s
 Formula=
 Provider=LHM
 ID=/motherboard
-[Source58]
+[Source60]
 Name=Voltage #1 - Vcore
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/0
-[Source59]
+[Source61]
 Name=Voltage #5 - SoC
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/4
-[Source60]
+[Source62]
 Name=Voltage #6 - MISC
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/5
-[Source61]
+[Source63]
 Name=Voltage #7 - MEM
 Units=V
 Format=%.3f
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/voltage/6
-[Source62]
+[Source64]
 Name=Temperature #1 - System
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/0
-[Source63]
+[Source65]
 Name=Temperature #2 - PCH
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/1
-[Source64]
+[Source66]
 Name=Temperature #3 - CPU
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/2
-[Source65]
+[Source67]
 Name=Temperature #4 - PCIEX16
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=LHM
 ID=/lpc/it8696e/0/temperature/3
-[Source66]
+[Source68]
 Name=Temperature #5 - VRM MOS
-Units=캜
+Units=째C
 Format=
 Formula=
 Provider=LHM
@@ -745,7 +759,7 @@ TextColor=C0C0C0,0,25,80FF,25,50,FFFF,50,75,FF0000,75,(CPU16 usage,1)
 BgndColor=80000000
 [Layer24]
 Name=CPU_GLOBAL temperature graph
-Text="                                                            %CPU temperature% 캜\n<G=CPU temperature,198,37,1,0,100,0>"
+Text="                                                            %CPU temperature% 째C\n<G=CPU temperature,198,37,1,0,100,0>"
 PositionX=0
 PositionY=-19
 ExtentX=-36
@@ -768,7 +782,7 @@ TextColor=C0C0C0,0,50,8000,50,90,B700,90,(GPU1 usage,1)
 BgndColor=80000000
 [Layer26]
 Name=GPU core temperature graph
-Text="                                                    %GPU1 temperature% 캜 / \n<G=GPU1 temperature,198,37,1,0,100,0>"
+Text="                                                    %GPU1 temperature% 째C / \n<G=GPU1 temperature,198,37,1,0,100,0>"
 PositionX=0
 PositionY=-10
 ExtentX=0
@@ -779,7 +793,7 @@ Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(GPU1 temperature,1)
 [Layer27]
 Name=GPU core hotspot temperature graph
-Text="                                                            %GPU1 temperature Hotsopt% 캜 \n<G=GPU1 temperature Hotsopt,198,37,1,0,100,0>"
+Text="                                                            %GPU1 temperature Hotsopt% 째C \n<G=GPU1 temperature Hotsopt,198,37,1,0,100,0>"
 PositionX=0
 PositionY=-10
 ExtentX=0
@@ -843,7 +857,7 @@ FixedAlignment=1
 Size=50
 [Layer33]
 Name=GPU memory temperature graph
-Text="                           %GPU1 memory temperature% 캜\n<G=GPU1 memory temperature,99,37,1,0,100,0>"
+Text="                           %GPU1 memory temperature% 째C\n<G=GPU1 memory temperature,99,37,1,0,100,0>"
 PositionX=0
 PositionY=-14
 ExtentX=0
@@ -928,7 +942,7 @@ FixedAlignment=1
 Size=50
 [Layer41]
 Name=
-Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.0.3
+Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.0.4
 PositionX=0
 PositionY=0
 ExtentX=-36
@@ -1106,7 +1120,7 @@ TextColor=FF0000
 BgndColor=CD000000
 [Layer58]
 Name=Motherboard system temperature graph
-Text=SYS: %Temperature #1 - System% 캜\n<G=Temperature #1 - System,198,37,1,0,100,0>
+Text=SYS: %Temperature #1 - System% 째C\n<G=Temperature #1 - System,198,37,1,0,100,0>
 PositionX=0
 PositionY=-36
 ExtentX=0
@@ -1118,7 +1132,7 @@ TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #1 - System
 BgndColor=82000000
 [Layer59]
 Name=Motherboard PCH temperature graph
-Text="                 PCH: %Temperature #2 - PCH% 캜\n<G=Temperature #2 - PCH,198,37,1,0,100,0>"
+Text="                 PCH: %Temperature #2 - PCH% 째C\n<G=Temperature #2 - PCH,198,37,1,0,100,0>"
 PositionX=0
 PositionY=-36
 ExtentX=0
@@ -1129,7 +1143,7 @@ Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #2 - PCH,1)
 [Layer60]
 Name=Motherboard PCIEX16 temperature graph
-Text="                                 PCI: %Temperature #4 - PCIEX16% 캜\n<G=Temperature #4 - PCIEX16,198,37,1,0,100,0>"
+Text="                                 PCI: %Temperature #4 - PCIEX16% 째C\n<G=Temperature #4 - PCIEX16,198,37,1,0,100,0>"
 PositionX=0
 PositionY=-36
 ExtentX=0
@@ -1140,7 +1154,7 @@ Size=50
 TextColor=FF00,0,70,FFFF00,70,80,FF8000,80,85,FF0000,85,(Temperature #4 - PCIEX16,1)
 [Layer61]
 Name=Motherboard VRM MOS temperature graph
-Text="                                                  VRM: %Temperature #5 - VRM MOS% 캜\n<G=Temperature #5 - VRM MOS,198,37,1,0,100,0>"
+Text="                                                  VRM: %Temperature #5 - VRM MOS% 째C\n<G=Temperature #5 - VRM MOS,198,37,1,0,100,0>"
 PositionX=0
 PositionY=-36
 ExtentX=0
@@ -1167,4 +1181,14 @@ PositionY=-41
 ExtentX=0
 ExtentY=0
 ExtentOrigin=8
+Size=50
+[Layer64]
+Name=GPU core hotspot temperature graph
+Text=GPU FAN: %GPU1 fan tachometer% RPM (%GPU1 fan speed% %)
+PositionX=-12
+PositionY=-10
+ExtentX=0
+ExtentY=0
+ExtentOrigin=0
+FixedAlignment=1
 Size=50
