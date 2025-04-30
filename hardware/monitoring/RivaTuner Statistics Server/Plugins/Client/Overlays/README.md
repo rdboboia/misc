@@ -16,3 +16,4 @@ The whole overlay is done exclusively in RTSS :)
 - CPU VCore (reported by motherboard sensor).
 - Added more RAM usage data.
 - Moved GPU perf limit label.
+- Added fan RPM and %.
