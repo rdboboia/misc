@@ -3,6 +3,8 @@ Here you can find my custom overlays for MSI Afterburner + RTSS.
 
 My current overlay version is RTSS only, which is easy to import and doesn't include any app settings.
 
+Unfortunately it seems like RTSS has a graph count limit (I think the limit is 48 graphs) and I've already reached said limit, so no more new graphs can be created without removing existing ones :(
+
 ## Software
 
 ### IMPORTANT NOTES
