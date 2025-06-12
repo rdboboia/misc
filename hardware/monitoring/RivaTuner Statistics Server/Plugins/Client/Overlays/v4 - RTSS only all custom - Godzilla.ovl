@@ -7,7 +7,7 @@ ZoomRatio=2
 [Settings]
 Name=
 EnvVars=PM_RefreshPeriod=20;PM_DisplayDelay=3000;PM_ProcessId=1
-RefreshPeriod=100
+RefreshPeriod=200
 EmbeddedImage=
 PingAddr=
 [General]
@@ -942,7 +942,7 @@ FixedAlignment=1
 Size=50
 [Layer41]
 Name=
-Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.0.4
+Text=<TIME=%H:%M:%S> - %Date% - Overlay v4.0.6
 PositionX=0
 PositionY=0
 ExtentX=-36
